@@ -14,7 +14,7 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 	</head>
 	<body id="top">
-
+	
 		<!-- Header -->
 			<header id="header">
 				<h1><strong class="larger">Hey, I'm Emre,</strong><br /> a business and product guy<br /> in the technology world; currently in New York.</h1>
@@ -82,12 +82,23 @@
 						<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
 						<div class="row">
 							<div class="8u 12u$(small)">
-								<form method="post" action="#">
+								<form method="POST" action="/payment">
 									<div class="row uniform 50%">
 										<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
 										<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
 										<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
 									</div>
+									<script
+										src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+										data-key="pk_test_8nHOlr8HSEGOxLercU9enqJ3"
+										data-amount="999"
+										data-name="Emre Tekisalp"
+										data-description="Will be Used for Good Beer Only!"
+										data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+										data-locale="auto"
+										data-zip-code="true"
+										data-bitcoin="true">
+									</script>
 								</form>
 								<ul class="actions">
 									<li><input type="submit" value="Send Message" /></li>

@@ -1,0 +1,89 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "fbgraphapi@latest",
+        "scope": null,
+        "escapedName": "fbgraphapi",
+        "name": "fbgraphapi",
+        "rawSpec": "latest",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/emre.tekisalp/Google Drive/web_apps/etekis_website/site_server_stage"
+    ]
+  ],
+  "_from": "fbgraphapi@latest",
+  "_id": "fbgraphapi@0.5.0",
+  "_inCache": true,
+  "_location": "/fbgraphapi",
+  "_npmUser": {
+    "name": "vanng822",
+    "email": "nguyen.van.nhu@vnmedia.se"
+  },
+  "_npmVersion": "1.2.18",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "fbgraphapi@latest",
+    "scope": null,
+    "escapedName": "fbgraphapi",
+    "name": "fbgraphapi",
+    "rawSpec": "latest",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/fbgraphapi/-/fbgraphapi-0.5.0.tgz",
+  "_shasum": "7d6848b3a837d2e650e54a6cf8f0ea25658df6a5",
+  "_shrinkwrap": null,
+  "_spec": "fbgraphapi@latest",
+  "_where": "/Users/emre.tekisalp/Google Drive/web_apps/etekis_website/site_server_stage",
+  "author": {
+    "name": "Nguyen Van Nhu"
+  },
+  "bugs": {
+    "url": "https://github.com/vanng822/facebook-nodejs/issues"
+  },
+  "contributors": [],
+  "dependencies": {},
+  "description": "Simple facebook api client",
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "7d6848b3a837d2e650e54a6cf8f0ea25658df6a5",
+    "tarball": "https://registry.npmjs.org/fbgraphapi/-/fbgraphapi-0.5.0.tgz"
+  },
+  "homepage": "https://github.com/vanng822/facebook-nodejs",
+  "keywords": [
+    "client",
+    "facebook",
+    "api"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/vanng822/facebook-nodejs/blob/master/LICENSE"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "vanng822",
+      "email": "nguyen.van.nhu@vnmedia.se"
+    }
+  ],
+  "name": "fbgraphapi",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vanng822/facebook-nodejs.git"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "version": "0.5.0"
+}

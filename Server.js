@@ -1,9 +1,15 @@
 var express = require('express')
-var app = express()
-var router = express.Router();
-var path = __dirname+'/views/'
+var app = express();
+var fs = require("fs");
 
-app.set('port',(process.env.PORT || 8080))
+var bodyParser=require('body-parser');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:false}));
+
+var router = express.Router();
+var path = __dirname+'/views/';
+
+app.set('port',(process.env.PORT || 8080));
 
 router.use(function (req,res,next) {
   console.log("/" + req.method);
@@ -14,7 +20,28 @@ router.get("/",function(req,res){
   res.sendFile(path + "index.html");
 });
 
-app.use(express.static('assets'))
+router.post("/payment",function(req,res){
+  console.log("Token:"+token);
+
+  var stripe = require("stripe")("sk_test_5uIiKilJCUccpVayx0ibe6vZ");
+
+  // Get the credit card details submitted by the form
+  var token = req.body.stripeToken; // Using Express
+  // Create a charge: this will charge the user's card
+  var charge = stripe.charges.create({
+    amount: 1000, // Amount in cents
+    currency: "usd",
+    source: token,
+    description: "Example charge"
+  }, function(err, charge) {
+    if (err && err.type === 'StripeCardError') {
+      // The card has been declined
+    }
+  });
+  res.sendFile(path+"success.html");
+});
+
+app.use(express.static('assets'));
 
 app.use("/",router);
 
