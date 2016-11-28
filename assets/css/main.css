@@ -231,6 +231,10 @@
 		box-sizing: border-box;
 	}
 
+	#two .row > *{
+		float:none;
+	}
+
 	.row:after, .row:before {
 		content: '';
 		display: block;
@@ -1566,10 +1570,10 @@
 		}
 
 	body, input, select, textarea {
-		color: #a2a2a2;
+		color: #4A4A4A;
 		font-family: "Roboto", Helvetica, sans-serif;
 		font-size: 16pt;
-		font-weight: 400;
+		font-weight: 100;
 		line-height: 1.75em;
 	}
 
@@ -1600,6 +1604,14 @@
 
 	p {
 		margin: 0 0 2em 0;
+	}
+
+	#one p{
+		margin:0;
+	}
+
+	#one h1{
+		line-height: normal;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -1748,6 +1760,101 @@
 
 	header.major h2 {
 		font-size: 2em;
+	}
+
+/* Section Two Hover Effect */
+
+	.grid {
+		padding: 0px 20px 20px 20px;
+		max-width: 100%;
+		margin: 0 auto;
+		list-style: none;
+		text-align: center;
+	}
+
+	.grid li{
+		display: inline-block;
+		width: 350px;
+		margin: 0;
+		padding: 20px;
+		text-align: left;
+		position: relative;
+	}
+
+	.grid figure {
+		margin: 0;
+		position: relative;
+	}
+
+	.grid figure img {
+		max-width: 100%;
+		display: block;
+		position: relative;
+	}
+
+	.grid figcaption{
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 20px;
+		background: #2c3f52;
+		color: rgba(255, 255, 255, 0.8);
+	}
+
+	.grid figcaption h3 {
+		margin: 0;
+		padding: 0;
+		color: #fff;
+	}
+
+	/*.grid figcaption a {
+		text-align: center;
+		padding: 5px 10px;
+		border-radius: 2px;
+		display: inline-block;
+		background: #ed4e6e;
+		color: #fff;
+	}*/
+
+	@media screen and (max-width: 31.5em) {
+		.grid {
+			padding: 10px 10px 100px 10px;
+		}
+		.grid li {
+			width: 100%;
+			min-width: 300px;
+		}
+	}
+
+
+	.grid figcaption{
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+		text-align: center;
+		backface-visibility: hidden;
+		transition: transform 0.3s, opacity 0.3s;
+	}
+
+	.grid figure:hover figcaption,
+	.gridfigure.cs-hover figcaption {
+		opacity: 0.95;
+		transform: translate(15px, 15px);
+	}
+
+	.grid figcaption h3 {
+		margin-top: 0px;
+	}
+
+	.grid figcaption span {
+		display: block;
+	}
+
+	.grid figcaption img{
+		max-width:75px;
+		margin:0 auto;
+		-webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter:drop-shadow(5px 5px 5px #222);
 	}
 
 /* Form */
@@ -2247,6 +2354,17 @@
 					top: 0;
 					width: 1em;
 				}
+
+		ul.who{
+			list-style: none;
+			padding-left:1em;
+			margin:1em 0 0 0;
+			color:#4a4a4a;
+		}
+			ul.who b{
+				font-weight:600;
+				color:#4a4a4a;
+			}
 
 	dl {
 		margin: 0 0 2em 0;
@@ -2809,7 +2927,7 @@
 				width: 1.75em;
 			}
 
-		.poptrox-popup:hover .nav-next,
+		/*.poptrox-popup:hover .nav-next,
 		.poptrox-popup:hover .nav-previous {
 			opacity: 0.5;
 		}
@@ -2825,7 +2943,7 @@
 
 			.poptrox-popup:hover .closer:hover {
 				opacity: 1.0;
-			}
+			}*/
 
 /* Touch */
 

@@ -97,7 +97,7 @@
 		// Main Sections: Two.
 
 			// Lightbox gallery.
-				$window.on('load', function() {
+				/*$window.on('load', function() {
 
 					$('#two').poptrox({
 						caption: function($a) { return $a.next('h3').text(); },
@@ -113,7 +113,7 @@
 						windowMargin: (skel.breakpoint('small').active ? 0 : 50)
 					});
 
-				});
+				});*/
 
 	});
 
