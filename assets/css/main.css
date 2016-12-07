@@ -1774,20 +1774,22 @@
 
 	.grid li{
 		display: inline-block;
-		width: 350px;
+		width: 230px;
 		margin: 0;
-		padding: 20px;
+		padding: 10px;
 		text-align: left;
 		position: relative;
+		font-size: 14px;
 	}
 
 	.grid figure {
-		margin: 0;
 		position: relative;
+		margin:0;
 	}
 
 	.grid figure img {
-		max-width: 100%;
+		max-width: 210px;
+		max-height: 140px;
 		display: block;
 		position: relative;
 	}
@@ -1795,8 +1797,10 @@
 	.grid figcaption{
 		position: absolute;
 		top: 0;
+		bottom:0;
 		left: 0;
-		padding: 20px;
+		padding: 10px;
+		margin:auto;
 		background: #2c3f52;
 		color: rgba(255, 255, 255, 0.8);
 	}
@@ -1822,7 +1826,7 @@
 		}
 		.grid li {
 			width: 100%;
-			min-width: 300px;
+			min-width: 140px;
 		}
 	}
 
@@ -1848,13 +1852,43 @@
 
 	.grid figcaption span {
 		display: block;
+		font-weight: 400;
+	}
+
+	.grid figcaption p{
+		font-weight: 100;
+		font-size: 0.8em;
+	}
+
+	.grid figcaption div.img{
+		height:45px;
+		width:190px;
+		position:relative;
 	}
 
 	.grid figcaption img{
-		max-width:75px;
-		margin:0 auto;
+		max-height:100%;
+		max-width: 70px;
+		width:auto;
+		height:auto;
+		position:absolute;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+		margin:auto;
 		-webkit-filter: drop-shadow(5px 5px 5px #222);
     filter:drop-shadow(5px 5px 5px #222);
+	}
+
+	#two .row h4{
+		padding-left:40px;
+	}
+
+/* Section three */
+
+	div.twitter > *{
+		margin-top:50px;
 	}
 
 /* Form */
