@@ -1846,7 +1846,8 @@
 	}
 
 	.cs-style-1 figcaption h3 {
-		margin-top: 0px;
+		margin-top: 1em;
+		font-size:14px;
 	}
 
 	.cs-style-1 figcaption span {
