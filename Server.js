@@ -1,7 +1,6 @@
 var express = require('express')
 var app = express();
 var fs = require("fs");
-var ghost = require('./ghost')
 
 var bodyParser=require('body-parser');
 app.use(bodyParser.json());
@@ -20,6 +19,10 @@ router.use(function (req,res,next) {
 router.get("/",function(req,res){
   res.sendFile(path + "index.html");
 });
+
+router.get("/blog",function(req,res){
+  res.sendFile(path+":5000");
+})
 
 router.post("/payment",function(req,res){
   console.log("Token:"+token);
@@ -45,7 +48,6 @@ router.post("/payment",function(req,res){
 app.use(express.static('assets'));
 
 app.use("/",router);
-app.use("/blog",ghost);
 
 app.use("*",function(req,res){
   res.sendFile(path + "404.html");
