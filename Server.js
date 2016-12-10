@@ -1,6 +1,7 @@
 var express = require('express')
 var app = express();
 var fs = require("fs");
+var ghost = require('./ghost')
 
 var bodyParser=require('body-parser');
 app.use(bodyParser.json());
@@ -44,6 +45,7 @@ router.post("/payment",function(req,res){
 app.use(express.static('assets'));
 
 app.use("/",router);
+app.use("/blog",ghost);
 
 app.use("*",function(req,res){
   res.sendFile(path + "404.html");
