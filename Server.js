@@ -21,7 +21,7 @@ router.get("/",function(req,res){
 });
 
 router.get("/blog",function(req,res){
-  res.sendFile(path+":5000");
+  res.sendFile(":5000");
 })
 
 router.post("/payment",function(req,res){
