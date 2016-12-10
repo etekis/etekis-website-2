@@ -1772,7 +1772,7 @@
 		text-align: center;
 	}
 
-	.grid li{
+	.cs-style-1 li{
 		display: inline-block;
 		width: 230px;
 		margin: 0;
@@ -1787,7 +1787,7 @@
 		margin:0;
 	}
 
-	.grid figure img {
+	.cs-style-1 figure img {
 		max-width: 210px;
 		max-height: 140px;
 		display: block;
@@ -1830,8 +1830,7 @@
 		}
 	}
 
-
-	.grid figcaption{
+	.cs-style-1 figcaption{
 		height: 100%;
 		width: 100%;
 		opacity: 0;
@@ -1840,17 +1839,17 @@
 		transition: transform 0.3s, opacity 0.3s;
 	}
 
-	.grid figure:hover figcaption,
-	.gridfigure.cs-hover figcaption {
+	.cs-style-1 figure:hover figcaption,
+	.touchevents .cs-style-1 figure:hover figcaption {
 		opacity: 0.95;
 		transform: translate(15px, 15px);
 	}
 
-	.grid figcaption h3 {
+	.cs-style-1 figcaption h3 {
 		margin-top: 0px;
 	}
 
-	.grid figcaption span {
+	.cs-style-1 figcaption span {
 		display: block;
 		font-weight: 400;
 	}
@@ -1881,13 +1880,70 @@
     filter:drop-shadow(5px 5px 5px #222);
 	}
 
+/* Section Two Hover Effect 4 */
+
+	.cs-style-4 li{
+		display: inline-block;
+		width: 190px;
+		margin: 0;
+		padding: 10px;
+		text-align: left;
+		position: relative;
+		font-size: 14px;
+	}
+
+	.cs-style-4 figure img {
+		max-width: 100%;
+		display: block;
+		position: relative;
+	}
+
+	.cs-style-4 li{
+		perspective: 1700px;
+		perspective-origin: 0 50%;
+	}
+
+	.cs-style-4 figure {
+		transform-style: preserve-3d;
+	}
+
+	.cs-style-4 figure div {
+		overflow: hidden;
+	}
+
+	.cs-style-4 figure img {
+		transition: transform 0.4s;
+	}
+
+	.cs-style-4 figure:hover img,
+	.touchevents .cs-style-4 figure:hover img {
+		transform: translateX(25%);
+	}
+
+	.cs-style-4 figcaption {
+		height: 100%;
+		width: 70%;
+		opacity: 0;
+		backface-visibility: hidden;
+		transform-origin: 0 0;
+		transform: rotateY(-90deg);
+		transition: transform 0.4s, opacity 0.1s 0.3s;
+	}
+
+	.cs-style-4 figure:hover figcaption,
+	.touchevents .cs-style-4 figure:hover figcaption {
+		opacity: 1;
+		transform: rotateY(0deg);
+		transition: transform 0.4s, opacity 0.1s;
+	}
+
 	#two .row h4{
 		padding-left:40px;
 	}
 
 /* Section three */
 
-	div.twitter > *{
+	/*div.twitter > *{
 		margin-top:50px;
 	}
 

@@ -30,9 +30,9 @@
 						<p>Hello there! I'm Emre Tekisalp, a relatively young nomad, striving to make his dent in the <a href="http://worldaftercapital.org/" target="_blank">knowledge loop.</a>
 						Currently studying in Columbia Business School in NYC to get one of those infamous MBA degrees, I identify myself as:</p>
 						<ul class="who">
+							<li><b>Turkish</b></li><li><em>born & raised</em></li>
 							<li><b>Eternally curious</b></li><li><em>enough with the questions, brain!</em></li>
 							<li><b>Somewhat nerdy</b></li><li><em>mechanical engineer by training, tech nerd by trade</em></li>
-							<li><b>Turkish</b></li><li><em>born & raised</em></li>
 							<li><b>Occassional coder</b></li><li><em>I learn then forget: Python, node.JS, HTML/CSS, Javascript</em></li>
 						</ul>
 						<!--<ul class="actions">
@@ -197,6 +197,31 @@
 										</figure>
 									</li>
 								</ul>
+						</div>
+						<div class="row">
+							<div class="10u 12u$(xsmall)">
+								<a class="twitter-timeline" href="https://twitter.com/etekis" data-height="400" data-chrome="noheader nofooter">Stream of Consciousness</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+							</div>
+						</div>
+						<div class="row">
+							<form method="POST" action="/payment">
+								<div class="row uniform 50%">
+									<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
+									<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
+									<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+								</div>
+								<script
+									src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+									data-key="pk_test_8nHOlr8HSEGOxLercU9enqJ3"
+									data-amount="999"
+									data-name="Emre Tekisalp"
+									data-description="Will be Used for Good Beer Only!"
+									data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+									data-locale="auto"
+									data-zip-code="true"
+									data-bitcoin="true">
+								</script>
+							</form>
 						</div>
 					</section>
 
