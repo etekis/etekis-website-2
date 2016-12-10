@@ -1840,7 +1840,7 @@
 	}
 
 	.cs-style-1 figure:hover figcaption,
-	.touchevents .cs-style-1 figure:hover figcaption {
+	.touchevents .cs-style-1 figure:active figcaption {
 		opacity: 0.95;
 		transform: translate(15px, 15px);
 	}
