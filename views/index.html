@@ -19,15 +19,23 @@
 
 		<!-- Header -->
 			<header id="header">
-				<h1><strong class="larger">Hey, I'm Emre,</strong><br /> a business and product guy<br /> in the technology world; currently in New York.</h1>
+				<h1><strong class="larger">Hey, I'm Emre,</strong><br /> a business and product guy in the technology world; currently in New York.</h1>
+				<!--<div class="navigator">
+					<ul>
+						<li><a href="#one_title">Who?</a></li>
+						<li><a href="#two_title">Where?</a></li>
+						<li><a href="#three_title">Why?</a></li>
+						<li><a href="#four_title">What?</a></li>
+					</ul>
+				</div>-->
 			</header>
 
 		<!-- Main -->
 			<div id="main">
 				<!-- One -->
 					<section id="one">
-						<h1>Who?</h1>
-						<p>Hello there! I'm Emre Tekisalp, a relatively young nomad, striving to make his dent in the <a href="http://worldaftercapital.org/" target="_blank">knowledge loop.</a>
+						<h1 id="one_title">Who?</h1>
+						<p>Hello there! I'm <b>Emre Tekisalp</b>, a relatively young nomad, striving to make his dent in the <a href="http://worldaftercapital.org/" target="_blank">knowledge loop.</a>
 						Currently studying in Columbia Business School in NYC to get one of those infamous MBA degrees, I identify myself as:</p>
 						<ul class="who">
 							<li><b>Eternally curious</b></li><li><em>yet always learning to learn</em></li>
@@ -42,7 +50,7 @@
 
 				<!-- Two -->
 					<section id="two">
-						<h1>Where?</h1>
+						<h1 id="two_title">Where?</h1>
 						<div class="row">
 							<h4>Incredible teams I've worked with</h4>
 							<ul class="grid cs-style-1">
@@ -116,7 +124,7 @@
 
 				<!-- Three -->
 					<section id="three">
-						<h1>Why?</h1>
+						<h1 id="three_title">Why?</h1>
 						<p>Some of my recent readings that have not only helped me find answers, but also made me ask more questions:</p>
 						<ul>
 							<li>What shape do societies and populations take if basic income gets implemented?</li>
@@ -200,9 +208,14 @@
 						</div>
 					</section>
 
-				<!-- Four -->
-				<!--
 					<section id="four">
+						<h1 id="four_title">[What?] Fragments of Curiosity</h1>
+						<p>Named after one of my all time favorite songs, Fragments of Times by Daft Punk</p>
+					</section>
+
+				<!-- Five -->
+				<!--
+					<section id="five">
 						<h2>Elements</h2>
 
 						<section>
@@ -525,6 +538,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 		<!-- Footer -->
 			<footer id="footer">
 				<ul class="icons">
+					<li><a href="http://blog.etekisalp.com" class="blog_logo">e/tekis</a></li>
 					<li><a href="mailto:etekis@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
 					<li><a href="https://twitter.com/etekis" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 					<li><a href="https://www.linkedin.com/in/emretekisalp" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
@@ -556,6 +570,22 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			  ga('create', 'UA-2207192-9', 'auto');
 			  ga('send', 'pageview');
 
+				var $root = $('html, body');
+				$('a').click(function() {
+				    $root.animate({
+				        scrollTop: $( $.attr(this, 'href') ).offset().top-127
+				    }, 500);
+				    return false;
+				});
+
+			</script>
+			<script type="text/javascript" src="https://my-ghost-blog.com/shared/ghost-url.min.js"></script>
+			<script type="text/javascript">
+				ghost.init({
+					clientId: "ghost-frontend",
+					clientSecret: "0d7d040dce8d"
+				});
+				console.log(ghost.url.api())
 			</script>
 	</body>
 </html>

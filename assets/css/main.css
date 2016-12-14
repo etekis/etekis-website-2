@@ -1594,8 +1594,8 @@
 		}
 
 	strong, b {
-		color: #787878;
-		font-weight: 400;
+		font-weight:400;
+		color:#4a4a4a;
 	}
 
 	em, i {
@@ -1628,7 +1628,7 @@
 
 	h1 {
 		font-size: 2em;
-		line-height: 1.5em;
+		line-height: 1em;
 		font-weight:100;
 	}
 
@@ -2713,6 +2713,17 @@
 			width: 6.25em;
 		}
 
+		#header .navigator{
+			margin-top:20px;
+			color:rgba(255, 255, 255, 0.8);
+			font-size:1.4em;
+			line-height:1.75em;
+		}
+
+			#header .navigator ul{
+				list-style: none;
+			}
+
 /* Footer */
 
 	#footer {
@@ -2731,6 +2742,12 @@
 			#footer .icons a {
 				color: rgba(255, 255, 255, 0.4);
 			}
+
+		#footer a.blog_logo{
+			border-bottom: none;
+			font-size: 22px;
+			font-style: italic;
+		}
 
 		#footer .copyright {
 			color: rgba(255, 255, 255, 0.4);
