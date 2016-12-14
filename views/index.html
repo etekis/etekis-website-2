@@ -211,6 +211,7 @@
 					<section id="four">
 						<h1 id="four_title">[What?] Fragments of Curiosity</h1>
 						<p>Named after one of my all time favorite songs, Fragments of Times by Daft Punk</p>
+						<div id="blog-posts"></div>
 					</section>
 
 				<!-- Five -->
@@ -585,6 +586,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					clientId: "ghost-frontend",
 					clientSecret: "0d7d040dce8d"
 				});
+
 				function onSuccess(data) {
 				  var $result = $('#blog-posts');
 				  $.each(data.posts, function (i, post) {
