@@ -1550,6 +1550,11 @@
 			margin-left: 8.33333%;
 		}
 
+		#header{
+			background-position: top;
+			background-size: auto, auto 50%;
+		}
+
 	}
 
 /* Basic */
