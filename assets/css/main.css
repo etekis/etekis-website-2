@@ -3383,6 +3383,10 @@
 						background-size: 25%;
 					}
 
+					.grid {
+						padding-bottom: 20px;
+					}
+					
 					.grid li{
 						margin:auto;
 						width:230px;
