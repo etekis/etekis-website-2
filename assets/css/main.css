@@ -1550,11 +1550,6 @@
 			margin-left: 8.33333%;
 		}
 
-		#header{
-			background-position: bottom right;
-			background-size: auto, auto 50%;
-		}
-
 	}
 
 /* Basic */
@@ -3380,6 +3375,18 @@
 
 				#header h1 br {
 					display: none;
+				}
+
+			@media screen and (max-width: 480px) {
+					#header{
+						background-position: 25% 50%;
+						background-size: 25%;
+					}
+
+					.grid li{
+						margin:auto;
+						width:230px;
+					}
 				}
 
 		/* Footer */
