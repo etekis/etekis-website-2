@@ -12,7 +12,7 @@
 			parallax: true,
 
 		// Parallax factor (lower = more intense, higher = less intense).
-			parallaxFactor: 20
+			parallaxFactor: 30
 
 	};
 
@@ -114,6 +114,18 @@
 					});
 
 				});*/
+
+		$("span.hover").hover(function(){
+			$(".hover_react").addClass("highlight",200);
+		}, function(){
+			$(".hover_react").removeClass("highlight",200);
+		});
+
+		$("#four_title").hover(function(){
+			$("#appear").show("fade",400);
+		}, function(){
+			$("#appear").hide("fade",400);
+		});
 
 	});
 
