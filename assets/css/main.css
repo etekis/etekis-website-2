@@ -3387,6 +3387,18 @@
 						margin:auto;
 						width:230px;
 					}
+
+					#footer{
+						height:100%;
+					}
+
+						#footer .disclaimer{
+							width:90%;
+							float:none;
+							margin:0.5em auto 0 auto;
+							line-height: 1.5em;
+							color:rgba(255, 255, 255, 0.3);
+						}
 				}
 
 		/* Footer */
