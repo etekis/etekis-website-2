@@ -269,7 +269,7 @@
 				  var $result = $('.blog-posts');
 				  $.each(data.posts, function (i, post) {
 				    $result.append(
-				      '<li><blockquote><h3>' + post.title + '</h3>' + post.html.slice(0,250) + ' <a href="http://blog.etekisalp.com'+ post.url + '">(... more)</a></blockquote></li>'
+				      '<li><blockquote><h3><a href="http://blog.etekisalp.com' + post.url + '">' + post.title + '</a></h3>' + post.html.slice(0,250) + ' <a href="http://blog.etekisalp.com'+ post.url + '"> (... more)</a></blockquote></li>'
 				    );
 				  });
 				}
