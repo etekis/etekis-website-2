@@ -9,7 +9,8 @@
   "dependencies": {
     "pg":"4.x",
     "express": "latest",
-    "fbgraphapi": "latest"
+    "fbgraphapi": "latest",
+    "coinbase": "latest"
   },
   "author": "",
   "license": "ISC",

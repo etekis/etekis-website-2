@@ -20,6 +20,10 @@ router.get("/",function(req,res){
   res.sendFile(path + "index.html");
 });
 
+router.get("/apps",function(req,res){
+  res.sendFile(path + "apps.html");
+});
+
 router.get("/blog",function(req,res){
   res.sendFile(":5000");
 })

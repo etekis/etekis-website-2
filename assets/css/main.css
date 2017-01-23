@@ -1886,7 +1886,7 @@
 
 	.grid figcaption img{
 		max-height:100%;
-		max-width: 70px;
+		max-width: 90px;
 		width:auto;
 		height:auto;
 		position:absolute;
@@ -3134,6 +3134,7 @@
 			#header {
 				padding: 6em 3em 3em 3em;
 				width: 30%;
+
 			}
 
 				#header h1 {
@@ -3144,11 +3145,21 @@
 						display: none;
 					}
 
+		/* Lists */
+
+		ul.icons li .icon {
+			font-size: 0.75em;
+		}
+
 		/* Footer */
 
 			#footer {
 				padding: 0 3em 5em 3em;
 				width: 30%;
+			}
+
+			#footer .copyright {
+				margin: 0 0 0 0;
 			}
 
 				#footer .copyright li {
@@ -3157,6 +3168,13 @@
 					line-height: 2.25em;
 					margin-left: 0;
 					padding-left: 0;
+				}
+
+				#footer .disclaimer{
+					width:100%;
+					margin:0.5em auto 0 auto;
+					line-height: 1.5em;
+					color:rgba(255, 255, 255, 0.3);
 				}
 
 		/* Main */
@@ -3386,7 +3404,7 @@
 					.grid {
 						padding-bottom: 20px;
 					}
-					
+
 					.grid li{
 						margin:auto;
 						width:230px;
