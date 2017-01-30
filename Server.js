@@ -29,25 +29,49 @@ router.get("/blog",function(req,res){
 })
 
 router.post("/payment",function(req,res){
-  console.log("Token:"+token);
 
   var stripe = require("stripe")("sk_test_5uIiKilJCUccpVayx0ibe6vZ");
 
   // Get the credit card details submitted by the form
   var token = req.body.stripeToken; // Using Express
+  console.log("Token:"+token);
+  /*
   // Create a charge: this will charge the user's card
   var charge = stripe.charges.create({
     amount: 1000, // Amount in cents
     currency: "usd",
     source: token,
-    description: "Example charge"
+    description: "Example charge",
+    metadata: {email: req.body.email, name: req.body.name}
   }, function(err, charge) {
-    if (err && err.type === 'StripeCardError') {
+    console.log("err:"+err);
+    if (err) {
       // The card has been declined
+    } else {
+      res.sendFile(path+"success.html");
     }
+  });*/
+
+  // Create customer
+  stripe.customers.create({
+    email: req.body.email,
+    source:token,
+  }).then(function(customer){
+    //add website code
+
+    var charge = stripe.charges.create({
+      amount:1000,
+      currency:"usd",
+      customer:customer.id,
+    });
+
+    console.log("charge:"+charge);
+  }).then(function(err,charge){
+    res.sendFile(path+"success.html");
   });
-  res.sendFile(path+"success.html");
+
 });
+
 
 app.use(express.static('assets'));
 
