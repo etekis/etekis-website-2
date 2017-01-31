@@ -20,8 +20,8 @@ router.get("/",function(req,res){
   res.sendFile(path + "index.html");
 });
 
-router.get("/apps",function(req,res){
-  res.sendFile(path + "apps.html");
+router.get("/stripe",function(req,res){
+  res.sendFile(path + "stripe.html");
 });
 
 router.get("/blog",function(req,res){
