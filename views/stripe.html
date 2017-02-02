@@ -100,6 +100,8 @@
 										<input type="submit" class="btn submit" value="Submit Payment">
 									</div>
 
+									<span class="payment_result"></span><br />
+
 								</div>
 							</form>
 
@@ -151,9 +153,10 @@
 
 				$(function(){
 					var $form = $('#payment-form');
-					$form.submit(function(event){
+					var $submit = $form.find('.submit');
+					$submit.on("click", function(event){
 						// Disable the submit button to prevent multiple clicks
-						$form.find('.submit').prop('disabled',true);
+						$submit.prop('disabled',true);
 
 						// Request a token from Stripe
 						Stripe.card.createToken($form, stripeResponseHandler);
@@ -175,8 +178,14 @@
 						var token = response.id;
 
 						$form.append($('<input type="hidden" name="stripeToken">').val(token));
+						//$form.get(0).submit()
 
-						$form.get(0).submit();
+						var form_0=$form.serialize();
+
+						var jqxhr = $.post("/payment", form_0)
+							.done(function(data){
+								$form.find('.payment_result').text(data);
+							});
 					}
 				};
 

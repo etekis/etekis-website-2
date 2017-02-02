@@ -30,9 +30,10 @@ router.get("/blog",function(req,res){
 
 router.post("/payment",function(req,res){
 
-  var stripe = require("stripe")("k_test_5uIiKilJCUccpVayx0ibe6vZ");
+  var stripe = require("stripe")("sk_test_5uIiKilJCUccpVayx0ibe6vZ");
 
   // Get the credit card details submitted by the form
+  console.log(req);
   var token = req.body.stripeToken; // Using Express
   console.log("Token:"+token);
   /*
@@ -67,10 +68,9 @@ router.post("/payment",function(req,res){
 
     console.log("charge:"+charge);
   }).then(function(charge){
-      //res.writeHead(200, {"Content-Type": "text/plain"});
-      //res.end("Successful Transaction");
-      //console.log("string sent");
-      res.sendFile(path+"success.html");
+      res.send("Successful Transaction");
+      console.log("string sent");
+      //res.sendFile(path+"success.html");
     }, function(err){
     console.log("errorrorororor");
   });
