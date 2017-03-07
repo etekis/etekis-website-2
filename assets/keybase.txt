@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/etekis
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://etekisalp.com
+  * I am etekis (https://keybase.io/etekis) on keybase.
+  * I have a public key ASCbW54B2M701FmfUtK6GVkS0ygLzShr2GLPFuKpae2-BAo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01209b5b9e01d8cef4d4599f52d2ba195912d3280bcd286bd862cf16e2a969edbe040a",
+            "host": "keybase.io",
+            "kid": "01209b5b9e01d8cef4d4599f52d2ba195912d3280bcd286bd862cf16e2a969edbe040a",
+            "uid": "ac3e97de26c629ad22ae90004e8bcf19",
+            "username": "etekis"
+        },
+        "service": {
+            "hostname": "etekisalp.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.18"
+    },
+    "ctime": 1488906197,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1488906190,
+        "hash": "3affaab892bb70ecddfd3a867eaec2ce6866c5010a11fa7019da0c7d1759aefe248de3739d40e10f1558a0d7246a871a2d0ec1025e21b9ed56c917e762827cfd",
+        "seqno": 944208
+    },
+    "prev": "d7f85348144de0ab8393fcdd87d6ffadc8ec981a7524e33eeb7233936f2a57b3",
+    "seqno": 7,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgm1ueAdjO9NRZn1LSuhlZEtMoC80oa9hizxbiqWntvgQKp3BheWxvYWTFAvJ7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwOWI1YjllMDFkOGNlZjRkNDU5OWY1MmQyYmExOTU5MTJkMzI4MGJjZDI4NmJkODYyY2YxNmUyYTk2OWVkYmUwNDBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwOWI1YjllMDFkOGNlZjRkNDU5OWY1MmQyYmExOTU5MTJkMzI4MGJjZDI4NmJkODYyY2YxNmUyYTk2OWVkYmUwNDBhIiwidWlkIjoiYWMzZTk3ZGUyNmM2MjlhZDIyYWU5MDAwNGU4YmNmMTkiLCJ1c2VybmFtZSI6ImV0ZWtpcyJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoiZXRla2lzYWxwLmNvbSIsInByb3RvY29sIjoiaHR0cDoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMTgifSwiY3RpbWUiOjE0ODg5MDYxOTcsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ4ODkwNjE5MCwiaGFzaCI6IjNhZmZhYWI4OTJiYjcwZWNkZGZkM2E4NjdlYWVjMmNlNjg2NmM1MDEwYTExZmE3MDE5ZGEwYzdkMTc1OWFlZmUyNDhkZTM3MzlkNDBlMTBmMTU1OGEwZDcyNDZhODcxYTJkMGVjMTAyNWUyMWI5ZWQ1NmM5MTdlNzYyODI3Y2ZkIiwic2Vxbm8iOjk0NDIwOH0sInByZXYiOiJkN2Y4NTM0ODE0NGRlMGFiODM5M2ZjZGQ4N2Q2ZmZhZGM4ZWM5ODFhNzUyNGUzM2VlYjcyMzM5MzZmMmE1N2IzIiwic2Vxbm8iOjcsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAk0ETsAnJY0Q72LyEOs7Q6l61g0IzF4wLq6hlUvA84WcXb/EOhkRgaL5CiszLq3DfWrkpjoz1n3S6nDLMC0mrBahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIP2moFkyQD3k2THB+ooSKNt8+sT5ROsvEzuPTBSyKpcro3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/etekis
+
+==================================================================
