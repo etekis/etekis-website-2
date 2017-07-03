@@ -1,0 +1,18 @@
+{
+  "name": "site_server_stage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "latest",
+    "fbgraphapi": "latest",
+    "pg": "4.x",
+    "stripe": "^4.15.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Emre</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="google-site-verification" content="sS7ypajpJp8MjwRU-sk-tlOHOeSKrwhovSiG8FmyD7g" />
+		<!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'/ >
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header">
+				<h1><strong class="larger">Hey, I'm Emre,</strong><br> a business and product guy in the technology world; currently in New York.</h1>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+				<!-- One -->
+					<section id="one">
+						<h1>Stripe Payments Implementation</h1>
+						<p>The below forms are only for demonstration purposes. Transactions are not real and the payment method you submit, even if correct, will not be charged.</p><br/>
+						<p>For payment details you can test the forms with, please check <a href="https://stripe.com/docs/testing#cards">Stripe's documentation</a>.</p><br/>
+						<h2>Checkout</h2>
+						<div class="row">
+							<form method="POST" action="/payment" id="checkout">
+								<div class="row uniform 50%">
+									<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
+									<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
+									<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+								</div>
+								<script
+									src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+									data-key="pk_test_8nHOlr8HSEGOxLercU9enqJ3"
+									data-amount="999"
+									data-name="Emre Tekisalp"
+									data-description="Will be Used for Good Beer Only!"
+									data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+									data-locale="auto"
+									data-zip-code="true"
+									data-bitcoin="true">
+								</script>
+							</form>
+						</div>
+
+						<h2>Stripe.js Implementation</h2>
+						<div class="row">
+							<form method="POST" action="/payment" id="payment-form">
+								<div class="row uniform 50%">
+									<span class="payment-errors"></span><br />
+
+									<div class="6u 12u$(xsmall)">
+										<input type="text" id="name" placeholder="Name" name="name" data-stripe="name" />
+									</div>
+
+									<div class="6u$ 12u$(xsmall)">
+										<input type="email" id="email" placeholder="Email" name="email" data-stripe="email" />
+									</div>
+
+									<div class="12u$">
+										<label>
+											<span>Card Number</span>
+											<input type="text" size="20" data-stripe="number">
+										</label>
+									</div>
+
+									<div class="row 6u 12u$(xsmall)">
+										<span>Expiration (MM/YY)</span>
+										<div class="6u">
+											<input type="text" size="2" maxlength="2" data-stripe="exp_month">
+										</div>
+										<div class="6u$">
+											<input type="text" size="2" data-stripe="exp_year">
+										</div>
+									</div>
+
+									<div class="6u$ 12u$(xsmall)">
+										<label>
+											<span>CVC</span>
+											<input type="text" size="4" data-stripe="cvc">
+										</label>
+									</div>
+
+									<div class="12u$">
+										<label>
+											<span>Billing ZIP Code</span>
+											<input type="text" size="6" data-stripe="address_zip">
+										</label>
+									</div>
+
+									<div class="6u$">
+										<input type="submit" class="btn submit" value="Submit Payment">
+									</div>
+
+									<span class="payment_result"></span><br />
+
+								</div>
+							</form>
+
+						</div>
+
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="http://blog.etekisalp.com" class="blog_logo">e/tekis</a></li>
+					<li><a href="mailto:etekis@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+					<li><a href="https://twitter.com/etekis" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="https://www.linkedin.com/in/emretekisalp" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://www.instagram.com/etekis/" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Emre Tekisalp</li><li>Design: <a href="mailto:etekis@gmail.com">Emre</a> & <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+				</ul>
+				<ul class="disclaimer">
+					<li><span class="hover_react">This website is eternally WIP, a hobby project I’m tinkering with to stay on top of things web - node.JS, express, HTML/CSS, Sketch, etc</span></li>
+				</ul>
+
+			</footer>
+
+		<!-- Scripts -->
+			<script src="js/jquery.min.js"></script>
+			<script src="js/jquery.poptrox.min.js"></script>
+			<script src="js/skel.min.js"></script>
+			<script src="js/util.js"></script>
+			<!--[if lte IE 8]><script src="js/ie/respond.min.js"></script><![endif]-->
+			<script src="js/main.js"></script>
+			<script src="js/modernizr-custom.js"></script>
+			<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', 'UA-2207192-9', 'auto');
+			  ga('send', 'pageview');
+
+			</script>
+			<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+			<script type="text/javascript">
+  			Stripe.setPublishableKey('pk_test_8nHOlr8HSEGOxLercU9enqJ3');
+
+				$(function(){
+					var $form = $('#payment-form');
+					var $submit = $form.find('.submit');
+					$submit.on("click", function(event){
+						// Disable the submit button to prevent multiple clicks
+						$submit.prop('disabled',true);
+
+						// Request a token from Stripe
+						Stripe.card.createToken($form, stripeResponseHandler);
+
+						// Prevent the form from being submitted
+						return false;
+					});
+				});
+
+				function stripeResponseHandler(status, response){
+					// Grab the form
+					var $form = $('#payment-form');
+
+					if (response.error){
+						// Show the errors on the form
+						$form.find('.payment-errors').text(response.error.message);
+						$form.find('.submit').prop('disabled',false);
+					} else {
+						var token = response.id;
+
+						$form.append($('<input type="hidden" name="stripeToken">').val(token));
+						//$form.get(0).submit()
+
+						var form_0=$form.serialize();
+
+						var jqxhr = $.post("/payment", form_0)
+							.done(function(data){
+								$form.find('.payment_result').text(data);
+							});
+					}
+				};
+
+			</script>
+	</body>
+</html>
