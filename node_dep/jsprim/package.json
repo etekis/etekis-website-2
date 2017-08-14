@@ -1,0 +1,135 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "jsprim@^1.2.2",
+        "scope": null,
+        "escapedName": "jsprim",
+        "name": "jsprim",
+        "rawSpec": "^1.2.2",
+        "spec": ">=1.2.2 <2.0.0",
+        "type": "range"
+      },
+<<<<<<< HEAD
+      "/Users/emretekisalp/Google Drive/Personal/web_apps/etekis_website/site_server_stage/node_modules/http-signature"
+    ]
+  ],
+  "_from": "jsprim@>=1.2.2 <2.0.0",
+  "_id": "jsprim@1.4.0",
+  "_inCache": true,
+  "_location": "/jsprim",
+  "_nodeVersion": "0.10.43",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/jsprim-1.4.0.tgz_1489453554649_0.9609751487150788"
+=======
+      "/Users/emre.tekisalp/Google Drive/web_apps/etekis_website/site_server_stage/node_modules/http-signature"
+    ]
+  ],
+  "_from": "jsprim@>=1.2.2 <2.0.0",
+  "_id": "jsprim@1.3.1",
+  "_inCache": true,
+  "_location": "/jsprim",
+  "_nodeVersion": "0.12.7",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/jsprim-1.3.1.tgz_1473725209917_0.5387293708045036"
+>>>>>>> 3066da72f57277c3d2d26e47bb5d95cdef6ab2bb
+  },
+  "_npmUser": {
+    "name": "dap",
+    "email": "dap@cs.brown.edu"
+  },
+  "_npmVersion": "2.15.9",
+<<<<<<< HEAD
+  "_phantomChildren": {
+    "extsprintf": "1.0.2"
+  },
+=======
+  "_phantomChildren": {},
+>>>>>>> 3066da72f57277c3d2d26e47bb5d95cdef6ab2bb
+  "_requested": {
+    "raw": "jsprim@^1.2.2",
+    "scope": null,
+    "escapedName": "jsprim",
+    "name": "jsprim",
+    "rawSpec": "^1.2.2",
+    "spec": ">=1.2.2 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/http-signature"
+  ],
+<<<<<<< HEAD
+  "_resolved": "https://registry.npmjs.org/jsprim/-/jsprim-1.4.0.tgz",
+  "_shasum": "a3b87e40298d8c380552d8cc7628a0bb95a22918",
+  "_shrinkwrap": null,
+  "_spec": "jsprim@^1.2.2",
+  "_where": "/Users/emretekisalp/Google Drive/Personal/web_apps/etekis_website/site_server_stage/node_modules/http-signature",
+  "bugs": {
+    "url": "https://github.com/joyent/node-jsprim/issues"
+  },
+  "dependencies": {
+    "assert-plus": "1.0.0",
+=======
+  "_resolved": "https://registry.npmjs.org/jsprim/-/jsprim-1.3.1.tgz",
+  "_shasum": "2a7256f70412a29ee3670aaca625994c4dcff252",
+  "_shrinkwrap": null,
+  "_spec": "jsprim@^1.2.2",
+  "_where": "/Users/emre.tekisalp/Google Drive/web_apps/etekis_website/site_server_stage/node_modules/http-signature",
+  "bugs": {
+    "url": "https://github.com/davepacheco/node-jsprim/issues"
+  },
+  "dependencies": {
+>>>>>>> 3066da72f57277c3d2d26e47bb5d95cdef6ab2bb
+    "extsprintf": "1.0.2",
+    "json-schema": "0.2.3",
+    "verror": "1.3.6"
+  },
+  "description": "utilities for primitive JavaScript types",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+<<<<<<< HEAD
+    "shasum": "a3b87e40298d8c380552d8cc7628a0bb95a22918",
+    "tarball": "https://registry.npmjs.org/jsprim/-/jsprim-1.4.0.tgz"
+=======
+    "shasum": "2a7256f70412a29ee3670aaca625994c4dcff252",
+    "tarball": "https://registry.npmjs.org/jsprim/-/jsprim-1.3.1.tgz"
+>>>>>>> 3066da72f57277c3d2d26e47bb5d95cdef6ab2bb
+  },
+  "engines": [
+    "node >=0.6.0"
+  ],
+<<<<<<< HEAD
+  "gitHead": "6ea6cb4f3d2d889d87c336487f4940eb4aa11980",
+  "homepage": "https://github.com/joyent/node-jsprim#readme",
+=======
+  "gitHead": "825aba45c6cff4340c18cdae363ccb5bdf840bd7",
+  "homepage": "https://github.com/davepacheco/node-jsprim#readme",
+>>>>>>> 3066da72f57277c3d2d26e47bb5d95cdef6ab2bb
+  "license": "MIT",
+  "main": "./lib/jsprim.js",
+  "maintainers": [
+    {
+      "name": "dap",
+      "email": "dap@cs.brown.edu"
+    }
+  ],
+  "name": "jsprim",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+<<<<<<< HEAD
+    "url": "git://github.com/joyent/node-jsprim.git"
+  },
+  "scripts": {},
+  "version": "1.4.0"
+=======
+    "url": "git://github.com/davepacheco/node-jsprim.git"
+  },
+  "scripts": {},
+  "version": "1.3.1"
+>>>>>>> 3066da72f57277c3d2d26e47bb5d95cdef6ab2bb
+}

@@ -2767,6 +2767,7 @@
 		position: fixed;
 		text-align: right;
 		width: 35%;
+		background: rgba(0,0,0,0.2);
 	}
 
 		#footer .icons {

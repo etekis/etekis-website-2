@@ -1,0 +1,30 @@
+{
+  "name": "debug",
+  "repo": "visionmedia/debug",
+  "description": "small debugging utility",
+<<<<<<< HEAD
+  "version": "2.6.7",
+=======
+  "version": "2.2.0",
+>>>>>>> 3066da72f57277c3d2d26e47bb5d95cdef6ab2bb
+  "keywords": [
+    "debug",
+    "log",
+    "debugger"
+  ],
+<<<<<<< HEAD
+  "main": "src/browser.js",
+  "scripts": [
+    "src/browser.js",
+    "src/debug.js"
+=======
+  "main": "browser.js",
+  "scripts": [
+    "browser.js",
+    "debug.js"
+>>>>>>> 3066da72f57277c3d2d26e47bb5d95cdef6ab2bb
+  ],
+  "dependencies": {
+    "rauchg/ms.js": "0.7.1"
+  }
+}
